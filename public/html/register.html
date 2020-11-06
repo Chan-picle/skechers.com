@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册-斯凯奇中国官方商城</title>
+    <script src="../js/lib/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <script src="../js/reg.js" type="module"></script>
+</head>
+
+<body>
+    <input type="text" name="username" id="username" placeholder="姓名*">
+    <input type="radio" name="sex" id="male" value="0"><label for="male">男</label>
+    <input type="radio" name="sex" id="female" value="1"><label for="female">女</label>
+    <label for="birth">生日*</label>
+    <select name="year" id="year">
+        <option value="">年</option>
+    </select>
+    <select name="month" id="month">
+        <option value="">月</option>
+    </select>
+    <select name="day" id="day">
+        <option value="">日</option>
+    </select>
+    <input type="text" name="phone" id="phone" placeholder="手机号码*">
+    <input type="text" name="yzm" id="yzm" placeholder="手机验证码*">
+    <input type="text" name="password" id="password" placeholder="密码">
+    <input type="text" name="repassword" id="repassword" placeholder="确认密码">
+    <input type="checkbox" name="read" id="read">
+    <label for="read">我已阅读并同意斯凯奇
+        <a href="javascript:;">平台服务协议</a> ,<a href="javascript:;">隐私保护条款</a> <a href="javascript:;">儿童个人信息保护专用条款</a> 
+    </label>
+    <input type="checkbox" name="fourteen" id="fourteen"><label for="fourteen">本人属于14周岁以上用户</label>
+    <button id="register">注册</button>
+</body>
+
+</html>
