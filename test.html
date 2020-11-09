@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <style>
+        #smallAdd {
+            position: relative;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            color: #fff;
+        }
+        
+        img {
+            width: 100%;
+            display: block;
+        }
+        
+        #closetop {
+            position: absolute;
+            right: 0;
+            width: 2rem;
+            height: 2rem;
+            z-index: 999999;
+            top: 50%;
+            margin-top: -1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="height: 2000px;">
+    <div id="smallAdd">
+        <div class="swiper-container" id="small-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./public/img/pc-11.1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./public/img/pc-11.3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./public/img/pc-11.12.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./public/img/pc-cut.jpg" alt=""></div>
+            </div>
+        </div>
+        <div id="closetop"><span class="glyphicon glyphicon-remove">X</span></div>
+    </div>
+</body>
+
+<script>
+    var mySwiper = new Swiper('#small-slider', {
+        loop: true, // 循环模式选项
+        autoplay: true
+    })
+</script>
+
+</html>

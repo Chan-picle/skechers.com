@@ -1,0 +1,33 @@
+@charset 'utf-8';
+#footer {
+  background-color: #e6e6e6;
+}
+#footer .container-fulid {
+  height: 63px;
+  padding: 10px 0;
+  border-bottom: 1px solid #b0b0b0;
+}
+#footer .container-fulid .row {
+  height: 100%;
+}
+#footer .container-fulid .col-md-6 {
+  height: 100%;
+  padding: 0 100px;
+}
+#footer .container-fulid .col-md-6 a {
+  display: block;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+}
+#footer .container-fulid .col-md-6 a p {
+  text-align: right;
+  font-size: 25px;
+  color: #1d80ca;
+}
+#footer .container-fulid .col-md-6 .pull-right {
+  background: url(../img/footer-3-icons.png) no-repeat 0px 0px;
+}
+#footer .container-fulid .col-md-6 .pull-left {
+  background: url(../img/footer-3-icons.png) no-repeat -500px 0px;
+}

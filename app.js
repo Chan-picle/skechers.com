@@ -19,6 +19,9 @@ app.use(express.urlencoded({ extended: true }));
 //cookie
 app.use(cookieParser());
 //路由
+app.use('/favicon.ico', (err, req, res, next) => {
+    next();
+});
 app.use('/users', userRouter);
 
 //其他路由报404错误

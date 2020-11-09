@@ -111,72 +111,28 @@
   top: 8px;
   left: -3px;
 }
-#banner {
-  width: 100%;
-  height: 605px;
-  margin: 0 auto;
+#smallAdd {
   position: relative;
-  background-color: red;
-  overflow: hidden;
 }
-#banner > div {
+#smallAdd .swiper-container {
+  width: 100%;
+  color: #fff;
+}
+#smallAdd .swiper-container img {
+  width: 100%;
+  display: block;
+}
+#smallAdd #closetop {
   position: absolute;
-  width: 10000px;
-}
-#banner > div img {
-  float: left;
-}
-#banner span {
-  visibility: hidden;
-  position: absolute;
-  top: 45%;
-  font-size: 10px;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(102, 102, 102, 0.2);
-  border-radius: 50%;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  z-index: 999999;
+  top: 50%;
+  margin-top: -1rem;
   text-align: center;
-  line-height: 70px;
-  color: grey;
-}
-#banner span:hover {
-  background-color: rgba(102, 102, 102, 0.9);
-  border-radius: 50%!important;
-}
-#banner span:first-of-type {
-  left: 6%;
-}
-#banner span:last-of-type {
-  right: 6%;
-}
-#banner span:hover {
-  color: #000;
-  border-radius: 20%;
-  user-select: none;
   cursor: pointer;
 }
-#banner .dot {
-  padding: 0;
-  position: absolute;
-  width: 150px;
-  list-style: none;
-  overflow: hidden;
-  bottom: 0;
-  left: 50%;
-  margin-left: -75px;
-}
-#banner .dot li {
-  background-color: grey;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  float: left;
-  margin: 10px;
-  cursor: pointer;
-}
-#banner .dot li:hover {
-  background-color: #000;
-}
-#banner .dot li.active {
-  background-color: #000;
+#smallAdd #closetop span {
+  color: #eee;
 }

@@ -16,7 +16,7 @@ router.route('/')
 //用户注册
 router.route('/reg')
     .post((req, res, next) => {
-        let searchSql = `select * from users where userename='${req.body.username}'`;
+        let searchSql = `select * from users where user_name='${req.body.username}'`;
         conn.query(searchSql, (err, results) => {
             if (err) throw err;
             if (results.length) {
@@ -30,7 +30,6 @@ router.route('/reg')
                 let insertSql = `insert into users (user_name,user_password,user_phone,user_sex,user_birth) values ('${req.body.username}','${md5Psw}','${req.body.phone}','${req.body.sex}','${req.body.birth}')`
                 conn.query(insertSql, (err, results) => { //results是结果数组
                     if (err) throw err;
-                    // console.log(results);
                     if (results.insertId) {
                         //注册成功
                         res.cookie('username', req.body.username);
