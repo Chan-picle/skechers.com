@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
-http.get('https://store.skechers.cn/', (res) => {
+http.get('https://store.skechers.cn/women/women-campaigns/women-new/', (res) => {
     const { statusCode } = res; // 解构获得http状态码
     const contentType = res.headers['content-type']; // 获得contenttype
 
@@ -33,7 +33,7 @@ http.get('https://store.skechers.cn/', (res) => {
         $('img').each((i, elm) => {
             // 统一协议
             let url = $(elm).attr('src').replace(reg, 'https://store.skechers.cn/'); //替换成 https://
-            if (url == '') url = 'https://store.skechers.cn/on/demandware.static/-/Library-Sites-SkechersSharedLibrary/zh_CN/dw0497de02/landing/certificate/pc_zzN.png';
+            if (url == '') url = 'https://store.skechers.cn/on/demandware.static/-/Library-Sites-SkechersSharedLibrary/zh_CN/dwcdbc4c8b/top-store-icon.png';
             // console.log(i, url);
             // 获得文件名
             let filename = url.split('/').pop();
@@ -43,10 +43,10 @@ http.get('https://store.skechers.cn/', (res) => {
                 res.setEncoding('binary'); // 设置成二进制
                 res.on('data', chunk => imgData += chunk);
                 res.on('end', () => {
-                    fs.writeFile(path.join(__dirname, 'public', 'img', filename), imgData, 'binary', err => {
+                    fs.writeFile(path.join(__dirname, 'public', 'img', 'product', filename), imgData, 'binary', err => {
                         if (err) console.log(err);
-                        console.log('文件已保存');
-                    })
+                        console.log(i, '文件已保存');
+                    });
                 });
             });
         });
