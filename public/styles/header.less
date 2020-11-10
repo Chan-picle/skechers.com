@@ -32,22 +32,104 @@
 .navbar{
     background-color: #fff;
     margin: 0;
-    ul{
+    .container>.pull-left{
         overflow: hidden;
         list-style: none;
         margin: 0;
         width: 45%;
-        li{
+        >li{
             float: left;
-            margin-right: 2rem;
-            a{
-                // background-color: red;
+            padding-right: 2rem;
+            // box-sizing: border-box;
+            &:hover{
+                >a{
+                    border-bottom:4px solid #000 ;
+                }
+                .subnav{
+                    display: block;
+                }
+            }
+            >a{
                 padding:  0 1.2rem;
                 line-height: 50px;
                 color: #000;
                 text-decoration: none;
+                display: block;
+                height: 50px;
             }
+            .subnav{
+                z-index: 9999;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                background-color: #fff;
+                padding: 60px 0;
+                display: none;
+                border-bottom: 1px solid #333;
+                border-top: 1px solid #333;
+                .col-md-6{
+                    // height: 300px;
+                    // background-color: burlywood;
+                    ul{
+                        float: left;
+                        list-style: none;
+                        margin-right: 30px;
+                        width: 100px;
+                        li{
+                            line-height: 3rem;
+                            >a{
+                                color:#333;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .newProducts{
+                    width: 80%;
+                    margin: 0 auto;
+                    a{
+                        display: block;
+                        width: 20%;
+                        float: left;
+                        padding: 10px;
+                        text-align: center;
+                        color:#333;
+                        text-decoration: none;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                        p{
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                .stars{
+                    a{
+                        color:#333;
+                        text-decoration: none;
+                        img{
+                            width: 250px;
+                        }
+                        p{
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        .row >div:nth-of-type(2){
+            // background-color: chartreuse;
+            p{
+                margin-bottom: 30px;
+            }
+            a{
+                color:#000;
+                text-decoration: none;
+            }
+
         }
+        }
+
     }
     #nav-right{
         position: relative;

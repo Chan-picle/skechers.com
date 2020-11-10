@@ -1,0 +1,117 @@
+@charset 'utf-8';
+@import './header.less';
+@import './footer.less';
+.btn-primary{
+    background-color:#002952!important;
+}
+#main{
+    .row{
+        color:#333;
+        padding: 50px 0;
+        //注册表单
+        >div:nth-of-type(1){
+            padding: 50px 100px;
+            .reg-1{
+                >div{
+                    width: 45px;
+                    height: 45px;
+                    background: url(../img/footer-3-icons.png) no-repeat;
+                }
+            }
+            //姓名
+            >input:nth-of-type(1){
+                // background-color: aquamarine;
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #333;
+                outline: none;
+            }
+            //sex
+            .sex{
+                padding: 15px;
+                input:nth-of-type(2){
+                    margin-left: 20px;
+                }
+                label{
+                    padding-left: 10px;
+                }
+            }
+            //birth
+            .birth{
+                width: 100%;
+                #year,#month,#day{
+                    padding: 5px;
+                    width: 32%;
+                }
+                #month{
+                    margin-left: 8px;
+                }
+            }
+
+            //phone
+            >input:nth-of-type(2){
+                // background-color: aquamarine;
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #333;
+                outline: none;
+                margin: 10px 0;
+            }
+            //yzm
+            .yzmbox{
+                >input{
+                    padding: 5px;
+                    margin: 10px 0;
+                    width: 70%;
+                }
+                button{
+                    margin: 10px 0;
+                }
+            }
+            
+            //password
+            >input:nth-of-type(3){
+                // background-color: aquamarine;
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #333;
+                outline: none;
+                margin: 10px 0;
+
+            }
+            >input:nth-of-type(4){
+                // background-color: aquamarine;
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #333;
+                outline: none;
+                margin: 10px 0;
+
+            }
+            .quickLogin{
+                margin-top: 60px;
+                a{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                }
+                a:nth-of-type(1){
+                    background: url(../img/spritesheet.png) no-repeat -390px -73px;
+                }
+                a:nth-of-type(2){
+                    background: url(../img/spritesheet.png) no-repeat -390px -134px;
+                }
+                a:nth-of-type(3){
+                    background: url(../img/spritesheet.png) no-repeat -390px -194px;
+                }
+            }
+            >div:last-of-type{
+                margin-top: 30px;
+                a{
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,9 @@ import './lib/jquery.js';
 import './lib/jquery.md5.js';
 import cookie from './lib/cookie.js';
 
+$('#header').load('../html/header.html');
+$('#footer').load('../html/footer.html');
+
 //渲染生日下拉
 for (let i = 1970; i <= 2020; i++) {
     $('#year').append(`<option>${i}</option>`);

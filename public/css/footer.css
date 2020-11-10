@@ -31,3 +31,82 @@
 #footer .container-fulid .col-md-6 .pull-left {
   background: url(../img/footer-3-icons.png) no-repeat -500px 0px;
 }
+#footer .container {
+  border-bottom: 1px solid #b0b0b0;
+}
+#footer .container .footer-pay > div {
+  line-height: 80px;
+}
+#footer .container .footer-pay > div img {
+  margin: 0 10px;
+}
+#footer .container .footer-main ul {
+  float: left;
+  margin: 0;
+  padding: 0 115px 40px 0;
+}
+#footer .container .footer-main ul h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#footer .container .footer-main ul li {
+  list-style: none;
+}
+#footer .container .footer-main ul li a {
+  color: #bfbfbf;
+  line-height: 30px;
+}
+#footer .container .footer-main > div p {
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+#footer .container .footer-main > div a:nth-of-type(2) {
+  position: relative;
+  margin-left: 15px;
+}
+#footer .container .footer-main > div a:nth-of-type(2) .qrcode {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 999;
+  width: 200px;
+  display: none;
+}
+#footer .container .footer-main > div a:nth-of-type(2):hover .qrcode {
+  display: block;
+}
+#footer .container .footer-main > div fieldset {
+  width: 350px;
+  position: relative;
+}
+#footer .container .footer-main > div fieldset input {
+  display: block;
+  position: absolute;
+  outline: none;
+  border: 0;
+  height: 100%;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#footer .container .footer-main > div fieldset button {
+  background-color: #333;
+  color: #fff;
+  width: 50px;
+  border: 0;
+  font-size: 20px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-bottom {
+  padding: 15px 0 80px;
+}
+#footer .footer-bottom p {
+  margin: 0;
+}
+#footer .footer-bottom img {
+  margin: 0 20px;
+}

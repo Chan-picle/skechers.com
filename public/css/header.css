@@ -33,19 +33,88 @@
   background-color: #fff;
   margin: 0;
 }
-.navbar ul {
+.navbar .container > .pull-left {
   overflow: hidden;
   list-style: none;
   margin: 0;
   width: 45%;
 }
-.navbar ul li {
+.navbar .container > .pull-left > li {
   float: left;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
-.navbar ul li a {
+.navbar .container > .pull-left > li:hover > a {
+  border-bottom: 4px solid #000;
+}
+.navbar .container > .pull-left > li:hover .subnav {
+  display: block;
+}
+.navbar .container > .pull-left > li > a {
   padding: 0 1.2rem;
   line-height: 50px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+}
+.navbar .container > .pull-left > li .subnav {
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 60px 0;
+  display: none;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+}
+.navbar .container > .pull-left > li .subnav .col-md-6 ul {
+  float: left;
+  list-style: none;
+  margin-right: 30px;
+  width: 100px;
+}
+.navbar .container > .pull-left > li .subnav .col-md-6 ul li {
+  line-height: 3rem;
+}
+.navbar .container > .pull-left > li .subnav .col-md-6 ul li > a {
+  color: #333;
+  text-decoration: none;
+}
+.navbar .container > .pull-left > li .subnav .newProducts {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar .container > .pull-left > li .subnav .newProducts a {
+  display: block;
+  width: 20%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+.navbar .container > .pull-left > li .subnav .newProducts a img {
+  width: 100%;
+  display: block;
+}
+.navbar .container > .pull-left > li .subnav .newProducts a p {
+  padding-top: 10px;
+}
+.navbar .container > .pull-left > li .subnav .stars a {
+  color: #333;
+  text-decoration: none;
+}
+.navbar .container > .pull-left > li .subnav .stars a img {
+  width: 250px;
+}
+.navbar .container > .pull-left > li .subnav .stars a p {
+  padding-top: 10px;
+}
+.navbar .container > .pull-left > li .row > div:nth-of-type(2) p {
+  margin-bottom: 30px;
+}
+.navbar .container > .pull-left > li .row > div:nth-of-type(2) a {
   color: #000;
   text-decoration: none;
 }

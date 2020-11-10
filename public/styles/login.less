@@ -1,0 +1,87 @@
+@charset 'utf-8';
+@import './header.less';
+@import './footer.less';
+.btn-primary{
+    background-color:#002952!important;
+}
+#main{
+    .row{
+        // background-color: pink;
+        padding:50px 80px;
+        .tabs{
+            >ul{
+                list-style: none;
+                height: 50px;
+                padding: 0 20%;
+                border-bottom: 1px solid #333;
+                
+                li{
+                    float: left;
+                    line-height: 50px;
+                    height: 49px;
+                    cursor: pointer;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    width: 50%;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                li.active{
+                    border-bottom: 4px solid #000;
+                }
+            }
+            >div{
+                padding: 0 50px;
+                display: none!important;
+                &.show{
+                    display: block!important;
+                }
+                >input{
+                    width: 95%;
+                    padding: 10px;
+                    margin: 10px;
+                }
+                button.loginBtn{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .yzmbox{
+                    margin: 10px;
+                    input{
+                        width: 65%;
+                        padding:10px;
+                    }
+                    button{
+                        padding:11px 12px;
+                    }
+                }
+                .quickLogin{
+                    margin-top: 60px;
+                    a{
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    a:nth-of-type(1){
+                        background: url(../img/spritesheet.png) no-repeat -390px -73px;
+                    }
+                    a:nth-of-type(2){
+                        background: url(../img/spritesheet.png) no-repeat -390px -134px;
+                    }
+                    a:nth-of-type(3){
+                        background: url(../img/spritesheet.png) no-repeat -390px -194px;
+                    }
+                }
+            }
+        }   
+        >div:last-of-type{
+            padding: 100px 137px;
+            ul{
+                list-style: none;
+                li{
+                    line-height: 30px;
+                }
+            }
+        }     
+    }    
+}

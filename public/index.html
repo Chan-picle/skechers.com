@@ -6,26 +6,254 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SHECHERS (斯凯奇) 中国官网-来自美国的运动休闲品牌</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/lib/bootstrap.js"></script>
     <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js">
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <script src="./js/lib/swiper-bundle.js"></script>
+    <!--mine-->>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" type="module" defer="defer"></script>
+
 </head>
 
-<body style="height: 3000px;">
-    <div id="header" style="width: 100%;">
+<body>
+    <div id="topbar">
+        <div class="container">
+            <div class="top-left pull-left"><a href=""> 11.1-11.11，甄选好货低至五折起 (保价款不参与）</a></div>
+            <div class="top-right pull-right">
+                <ul>
+                    <li><span class="glyphicon glyphicon-map-marker"></span><a href="">线下门店</a></li>
+                    <li><span class="glyphicon glyphicon-comment"></span><a href="">在线客服</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <nav class="navbar navbar-default">
+        <!--navbar-fixed-top-->
+        <div class="container" style="width:95%">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" class="img-responsive"></a>
+            <ul class="pull-left">
+                <li><a href="">男子</a>
+                    <div class="container subnav">
+                        <div class="row">
+                            <div class="col-md-6" style="border-right: 1px solid #333;">
+                                <div class="pull-right ">
+                                    <ul>
+                                        <h6>最新活动</h6>
+                                        <li><a href="">最新上市</a></li>
+                                        <li><a href="">BARREL合作款</a></li>
+                                        <li><a href="">JEREMYVILLE联名款</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>鞋类</h6>
+                                        <li><a href="">时尚运动鞋</a></li>
+                                        <li><a href="">休闲运动鞋</a></li>
+                                        <li><a href="">跑步鞋</a></li>
+                                        <li><a href="">健步鞋</a></li>
+                                        <li><a href="">休闲鞋</a></li>
+                                        <li><a href="">凉鞋</a></li>
+                                        <li><a href="">靴子</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>服饰</h6>
+                                        <li><a href="">连帽衫/卫衣</a></li>
+                                        <li><a href="">外套/夹克</a></li>
+                                        <li><a href="">羽绒服</a></li>
+                                        <li><a href="">上衣</a></li>
+                                        <li><a href="">长裤</a></li>
+                                        <li><a href="">短裤</a></li>
+                                        <li><a href="">袜子</a></li>
+                                        <li><a href="">配件</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pull-left">
+                                    <p>精选系列</p>
+                                    <a href="">
+                                        <img src="./img/1.jpg" alt="">
+                                        <p>查看详情 &gt;</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">女子</a>
+                    <div class="container subnav">
+                        <div class="row">
+                            <div class="col-md-6" style="border-right: 1px solid #333;">
+                                <div class="pull-right ">
+                                    <ul>
+                                        <h6>最新活动</h6>
+                                        <li><a href="">美少女联名款</a></li>
+                                        <li><a href="">吾皇联名款</a></li>
+                                        <li><a href="">FLEX猫联名款</a></li>
+                                        <li><a href="">横冲直撞20岁</a></li>
+                                        <li><a href="">baller合作款</a></li>
+                                        <li><a href="">hellokitty合作款</a></li>
+                                        <li><a href="">ricostru联名款</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>鞋类</h6>
+                                        <li><a href="">时尚运动鞋</a></li>
+                                        <li><a href="">休闲运动鞋</a></li>
+                                        <li><a href="">跑步鞋</a></li>
+                                        <li><a href="">健步鞋</a></li>
+                                        <li><a href="">休闲鞋</a></li>
+                                        <li><a href="">凉鞋</a></li>
+                                        <li><a href="">靴子</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>服饰</h6>
+                                        <li><a href="">连帽衫/卫衣</a></li>
+                                        <li><a href="">外套/夹克</a></li>
+                                        <li><a href="">羽绒服</a></li>
+                                        <li><a href="">上衣</a></li>
+                                        <li><a href="">长裤</a></li>
+                                        <li><a href="">短裤</a></li>
+                                        <li><a href="">袜子</a></li>
+                                        <li><a href="">配件</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>精选系列</p>
+                                <a href="">
+                                    <img src="./img/2.jpg" alt="">
+                                    <p>查看详情 &gt;</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">儿童</a>
+                    <div class="container subnav">
+                        <div class="row">
+                            <div class="col-md-6" style="border-right: 1px solid #333;">
+                                <div class="pull-right ">
+                                    <ul>
+                                        <h6>最新活动</h6>
+                                        <li><a href="">最新上市</a></li>
+                                        <li><a href="">汪汪队</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>男童</h6>
+                                        <li><a href="">运动鞋</a></li>
+                                        <li><a href="">休闲鞋</a></li>
+                                        <li><a href="">闪灯鞋</a></li>
+                                        <li><a href="">凉鞋</a></li>
+                                        <li><a href="">上衣</a></li>
+                                        <li><a href="">外套</a></li>
+                                        <li><a href="">羽绒服</a></li>
+                                        <li><a href="">长裤</a></li>
+                                        <li><a href="">短裤</a></li>
+                                        <li><a href="">袜子</a></li>
+                                        <li><a href="">配件</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h6>女童</h6>
+                                        <li><a href="">运动鞋</a></li>
+                                        <li><a href="">休闲鞋</a></li>
+                                        <li><a href="">闪灯鞋</a></li>
+                                        <li><a href="">凉鞋</a></li>
+                                        <li><a href="">上衣</a></li>
+                                        <li><a href="">外套</a></li>
+                                        <li><a href="">羽绒服</a></li>
+                                        <li><a href="">连衣裙</a></li>
+                                        <li><a href="">长裤</a></li>
+                                        <li><a href="">短裤</a></li>
+                                        <li><a href="">袜子</a></li>
+                                        <li><a href="">配件</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>精选系列</p>
+                                <a href="">
+                                    <img src="./img/1.jpg" alt="">
+                                    <p>查看详情 &gt;</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">新品抢鲜</a></li>
+                <li><a href="">系列</a>
+                    <div class="container subnav">
+                        <div class="newProducts">
+                            <a href=""><img src="./img/mp1.jpg" alt="">
+                                <p>GO RUN系列</p>
+                            </a>
+                            <a href=""><img src="./img/mp2.jpg" alt="">
+                                <p>GO RUN系列</p>
+                            </a>
+                            <a href=""><img src="./img/mp3.jpg" alt="">
+                                <p>GO RUN系列</p>
+                            </a>
+                            <a href=""><img src="./img/mp4.jpg" alt="">
+                                <p>GO RUN系列</p>
+                            </a>
+                            <a href=""><img src="./img/mp5.jpg" alt="">
+                                <p>GO RUN系列</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">明星同款</a>
+                    <div class="container subnav">
+                        <div class="row stars">
+                            <div class="col-md-6 text-center" style="border-right: 1px solid #333;">
+                                <a href=""><img src="./img/star4.jpg" alt="">
+                                    <p>唐嫣同款 &gt;</p>
+                                </a>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a href=""><img src="./img/star3.jpg" alt="">
+                                    <p>吴尊同款 &gt;</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="nav-right" class="pull-right">
+                <li>
+                    <fieldset>
+                        <input type="search" name="search" id="search" placeholder="搜索">
+                        <!-- <button class="search-submit"><span class="glyphicon glyphicon-search"></span></button> -->
+                    </fieldset>
+                </li>
+                <li>
+                    <div class="reg-log"><a href="./html/register.html"><span class="glyphicon glyphicon-user"></span>登陆|注册</a></div>
+                </li>
+                <li>
+                    <div class="car"><a href=""><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- rolling samll banner -->
+    <div id="smallAdd">
+        <div class="swiper-container" id="small-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/pc-11.1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/pc-11.3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/pc-11.12.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/pc-cut.jpg" alt=""></div>
+            </div>
+        </div>
+        <div id="closetop"><span class="glyphicon glyphicon-remove"></span></div>
+    </div>
+
     <div id="banner">
         <div>
             <img src="./img/pc1.jpg" alt="">
@@ -47,28 +275,28 @@
                     <a href="" target="_blank">
                         <span>MEN</span>
                         <p>男子 &gt;</p>
-                        <img src="./img/11-1.jpg" class="img-responsive" alt="">
+                        <img src='./img/loading.gif' data-original="./img/11-1.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="" target="_blank">
                         <span>WOMEN</span>
                         <p>女子 &gt;</p>
-                        <img src="./img/11-2.jpg" class="img-responsive" alt="">
+                        <img src='./img/loading.gif' data-original="./img/11-2.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="" target="_blank">
                         <span>BOYS</span>
                         <p>男童 &gt;</p>
-                        <img src="./img/11-3.jpg" class="img-responsive" alt="">
+                        <img src='./img/loading.gif' data-original="./img/11-3.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="" target="_blank">
                         <span>GIRLS</span>
                         <p>女童 &gt;</p>
-                        <img src="./img/11-4.jpg" class="img-responsive" alt="">
+                        <img src='./img/loading.gif' data-original="./img/11-4.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -79,13 +307,13 @@
         <div class="container">
             <div class="row">
                 <a href="" target="_blank">
-                    <img src="./img/3-1-pc.jpg" alt="">
+                    <img src='./img/loading.gif' data-original="./img/3-1-pc.jpg" alt="">
                     <span>立即选购&nbsp;&gt;</span>
                 </a>
             </div>
             <div class="row">
                 <a href="" target="_blank">
-                    <img src="./img/3-3-pc.jpg" alt="">
+                    <img src='./img/loading.gif' data-original="./img/3-3-pc.jpg" alt="">
                     <span>立即选购&nbsp;&gt;</span>
                 </a>
             </div>
@@ -101,7 +329,7 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/1-1.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/1-1.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -110,7 +338,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/1-2.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/1-2.jpg" alt="">
                                     <div class="text-center">
                                         <p>ARCH FIT PHANTOM</p>
                                         <span>立即选购 &gt;</span>
@@ -119,7 +347,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/3.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/3.jpg" alt="">
                                     <div class="text-center">
                                         <p>STAMINA AIRY</p>
                                         <span>立即选购 &gt;</span>
@@ -128,7 +356,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/4.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/4.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -139,7 +367,7 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/5.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/5.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -148,7 +376,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/6.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/6.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -157,7 +385,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/7.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/7.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -166,7 +394,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/8.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/8.jpg" alt="">
                                     <div class="text-center">
                                         <p>D'LITES 1.0</p>
                                         <span>立即选购 &gt;</span>
@@ -188,7 +416,7 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/9.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/9.jpg" alt="">
                                     <div class="text-center">
                                         <p>女子针织卫衣</p>
                                         <span>立即选购 &gt;</span>
@@ -197,7 +425,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/10.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/10.jpg" alt="">
                                     <div class="text-center">
                                         <p>女子外套</p>
                                         <span>立即选购 &gt;</span>
@@ -206,7 +434,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/9.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/9.jpg" alt="">
                                     <div class="text-center">
                                         <p>男子羽绒服</p>
                                         <span>立即选购 &gt;</span>
@@ -215,7 +443,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/12.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/12.jpg" alt="">
                                     <div class="text-center">
                                         <p>男子外套</p>
                                         <span>立即选购 &gt;</span>
@@ -226,7 +454,7 @@
                         <div class="swiper-slide">
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/13.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/13.jpg" alt="">
                                     <div class="text-center">
                                         <p>男女同款双肩背包</p>
                                         <span>立即选购 &gt;</span>
@@ -235,7 +463,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/14.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/14.jpg" alt="">
                                     <div class="text-center">
                                         <p>男女同款腰包</p>
                                         <span>立即选购 &gt;</span>
@@ -244,7 +472,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/15.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/15.jpg" alt="">
                                     <div class="text-center">
                                         <p>男女同款双肩背包</p>
                                         <span>立即选购 &gt;</span>
@@ -253,7 +481,7 @@
                             </div>
                             <div>
                                 <a href="" target="_blank">
-                                    <img src="./img/16.jpg" alt="">
+                                    <img src='./img/loading.gif' data-original="./img/16.jpg" alt="">
                                     <div class="text-center">
                                         <p>男女同款棒球帽</p>
                                         <span>立即选购 &gt;</span>
@@ -274,7 +502,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <a href="">
-                        <img src="./img/5-1.jpg" alt="" class="img-responsive" style="width: 100%;">
+                        <img src='./img/loading.gif' data-original="./img/5-1.jpg" alt="" class="img-responsive" style="width: 100%;">
                         <div class="textbox">
                             <p>D'LITES 1.0</p>
                             <span>时尚复古 &gt;</span>
@@ -283,7 +511,7 @@
                 </div>
                 <div class="col-md-6">
                     <a href="">
-                        <img src="./img/5-2.jpg" alt="" class="img-responsive">
+                        <img src='./img/loading.gif' data-original="./img/5-2.jpg" alt="" class="img-responsive">
                         <div class="textbox ">
                             <p>LIGHTS</p>
                             <span>灯鞋 &gt;</span>
@@ -294,7 +522,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <a href="">
-                        <img src="./img/5-3.jpg" alt="" class="img-responsive">
+                        <img src='./img/loading.gif' data-original="./img/5-3.jpg" alt="" class="img-responsive">
                         <div class="textbox ">
                             <p>GO WALK</p>
                             <span>健步鞋 &gt;</span>
@@ -302,7 +530,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <img src="./img/5-4.jpg" alt="" class="img-responsive">
+                    <img src='./img/loading.gif' data-original="./img/5-4.jpg" alt="" class="img-responsive">
                     <div class="textbox ">
                         <span>男子服饰 &gt;</span><br>
                         <span>女子服饰 &gt;</span>
@@ -320,8 +548,88 @@
             </div>
         </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="" target="_blank" class="pull-right">
+                        <p>会员</p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="" target="_blank" class="pull-left">
+                        <p>门店</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-pay clearfix">
+                <div class="pull-left">我们的支付方式<img src="./img/alipay_pc.png" alt="" style="margin-left: 30px;"><img src="./img/wechatpay_pc.png" alt=""><img src="./img/unionpay_pc.png" alt=""></div>
+                <div class="pull-right"><img src="./img/cn.png" alt=""> 中国</div>
+            </div>
+            <div class="footer-main">
+                <ul>
+                    <h3>联系客服</h3>
+                    <li><a href=""> 团购申请</a></li>
+                    <li><a href=""> 在线地图</a></li>
+                    <li><a href=""> 网站地图</a></li>
+                </ul>
+                <ul>
+                    <h3>我的账户</h3>
+                    <li><a href=""> 会员权益</a></li>
+                    <li><a href=""> 我的信息</a></li>
+                    <li><a href=""> 我的订单</a></li>
+                    <li><a href=""> 我的信息</a></li>
+                    <li><a href=""> 我的优惠卷</a></li>
+                    <li><a href=""> 收货地址</a></li>
+                </ul>
+                <ul>
+                    <h3>帮助中心</h3>
+                    <li><a href="">订单异常</a> </li>
+                    <li><a href="">发票</a> </li>
+                    <li><a href="">支付方式</a> </li>
+                    <li><a href="">退货说明</a> </li>
+                    <li><a href="">找回密码</a> </li>
+                    <li><a href="./html/register.html">登陆与注册</a> </li>
+                </ul>
+                <ul>
+                    <h3>关于斯凯奇</h3>
+                    <li><a href="">斯凯奇故事</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">免责声明</a></li>
+                    <li><a href="">隐私保护</a></li>
+                    <li><a href="">服务协议</a></li>
+                    <li><a href="">投资关系</a></li>
+                    <li><a href="">招贤纳士</a></li>
+                </ul>
+                <div class="pull-right" style="text-align: right;">
+                    <p>关注我们</p>
+                    <a href=""><img src="./img/weibo.png" alt=""></a>
+                    <a href=""><img src="./img/wechat.png" alt=""><img src="./img/QRCode.jpg" alt="" class="qrcode"></a>
+                    <p>获取斯凯奇最新咨询</p>
+                    <fieldset>
+                        <input type="text" name="sendemail" id="sendemail"><button><span class="glyphicon glyphicon-envelope"></span></button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="border: 0;">
+            <div class="footer-bottom">
+                <div class="pull-left">
+                    <p>广州市利德丹贸易有限公司保留所有权利</p>
+                    <a href="">粤ICP备12085615号-1</a><span> &copy; 2018 SKECHERS,INC. </span>
+                </div>
+                <div class="pull-right">
+                    <img src="./img/pc_cx.png" alt="">
+                    <img src="./img/pc_kx.png" alt="">
+                    <img src="./img/pc_zzN.png" alt="">
+                    <img src="./img/pc_ga.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="./js/index.js"></script>
 
 </html>

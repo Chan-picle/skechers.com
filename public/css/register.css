@@ -1,4 +1,4 @@
-@charset 'utf8';
+@charset 'utf-8';
 * {
   padding: 0;
   margin: 0;
@@ -316,217 +316,98 @@
 #footer .footer-bottom img {
   margin: 0 20px;
 }
-#banner {
+.btn-primary {
+  background-color: #002952 !important;
+}
+#main .row {
+  color: #333;
+  padding: 50px 0;
+}
+#main .row > div:nth-of-type(1) {
+  padding: 50px 100px;
+}
+#main .row > div:nth-of-type(1) .reg-1 > div {
+  width: 45px;
+  height: 45px;
+  background: url(../img/footer-3-icons.png) no-repeat;
+}
+#main .row > div:nth-of-type(1) > input:nth-of-type(1) {
   width: 100%;
-  height: 605px;
-  margin: 0 auto;
-  position: relative;
-  background-color: red;
-  overflow: hidden;
-}
-#banner > div {
-  position: absolute;
-  width: 10000px;
-}
-#banner > div img {
-  float: left;
-}
-#banner span {
-  visibility: hidden;
-  position: absolute;
-  top: 45%;
-  font-size: 10px;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(102, 102, 102, 0.2);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 70px;
-  color: grey;
-}
-#banner span:hover {
-  background-color: rgba(102, 102, 102, 0.9);
-  border-radius: 50%!important;
-}
-#banner span:first-of-type {
-  left: 6%;
-}
-#banner span:last-of-type {
-  right: 6%;
-}
-#banner span:hover {
-  color: #000;
-  border-radius: 20%;
-  user-select: none;
-  cursor: pointer;
-}
-#banner .dot {
-  padding: 0;
-  position: absolute;
-  width: 150px;
-  list-style: none;
-  overflow: hidden;
-  bottom: 0;
-  left: 50%;
-  margin-left: -75px;
-}
-#banner .dot li {
-  background-color: grey;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  float: left;
-  margin: 10px;
-  cursor: pointer;
-}
-#banner .dot li:hover {
-  background-color: #000;
-}
-#banner .dot li.active {
-  background-color: #000;
-}
-#main-1 .row {
-  margin-top: 2rem;
-}
-#main-1 .row .col-md-3 {
   padding: 5px;
-  position: relative;
-}
-#main-1 .row .col-md-3 a {
-  color: #000;
-}
-#main-1 .row .col-md-3 a span {
-  position: absolute;
-  top: 3rem;
-  left: 2rem;
-  font-weight: 900;
-}
-#main-1 .row .col-md-3 a p {
-  position: absolute;
-  top: 5.5rem;
-  left: 2rem;
-  font-size: 2rem;
-}
-#main-2 .row {
-  margin-top: 2rem  ;
-}
-#main-2 .row a {
-  display: block;
-  padding: 0 5px;
-  position: relative;
-}
-#main-2 .row a img {
-  width: 100%;
-}
-#main-2 .row a span {
-  position: absolute;
-  top: 45%;
-  right: 10%;
-  background-color: #000;
-  padding: 1rem;
-  color: #fff;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-}
-#main-2 .row a span:hover {
-  color: #eee;
-}
-#main-3 h2 {
-  font-weight: 700;
-}
-#main-3 .slider-1,
-#main-3 .slider-2 {
-  position: relative;
-}
-#main-3 .slider-1 .swiper-button-prev,
-#main-3 .slider-2 .swiper-button-prev,
-#main-3 .slider-1 .swiper-button-next,
-#main-3 .slider-2 .swiper-button-next {
-  color: #000;
+  border: 1px solid #333;
   outline: none;
 }
-#main-3 .slider-1 .swiper-button-prev:after,
-#main-3 .slider-2 .swiper-button-prev:after,
-#main-3 .slider-1 .swiper-button-next:after,
-#main-3 .slider-2 .swiper-button-next:after {
-  font-size: 20px!important;
-  font-weight: bold;
+#main .row > div:nth-of-type(1) .sex {
+  padding: 15px;
 }
-#main-3 .swiper-container {
-  width: 90%;
-  height: 200px;
+#main .row > div:nth-of-type(1) .sex input:nth-of-type(2) {
+  margin-left: 20px;
 }
-#main-3 .slider-2 .swiper-container {
-  height: 250px;
+#main .row > div:nth-of-type(1) .sex label {
+  padding-left: 10px;
 }
-#main-3 .swiper-slide > div {
-  float: left;
-  box-sizing: border-box;
-  height: 100%;
-  width: 25%;
-}
-#main-3 .swiper-slide > div a {
-  color: #000;
-}
-#main-3 .swiper-slide > div a:hover {
-  text-decoration: none;
-}
-#main-3 .swiper-slide > div a img {
+#main .row > div:nth-of-type(1) .birth {
   width: 100%;
-  padding: 10px 20px;
 }
-#main-3 .swiper-slide > div a p {
-  margin-bottom: 2px;
-  font-size: 1.5rem;
-  color: #555;
-  font-weight: 700;
+#main .row > div:nth-of-type(1) .birth #year,
+#main .row > div:nth-of-type(1) .birth #month,
+#main .row > div:nth-of-type(1) .birth #day {
+  padding: 5px;
+  width: 32%;
 }
-#main-3 .swiper-slide > div a span {
-  color: #fff;
-  background-color: #000;
-  padding: 5px 15px;
-  line-height: 1.2rem;
-  font-size: 1.2rem;
+#main .row > div:nth-of-type(1) .birth #month {
+  margin-left: 8px;
 }
-#main-4 {
-  margin-top: 2rem;
-}
-#main-4 .container {
-  padding: 0;
-}
-#main-4 .container > div:last-of-type {
-  margin-top: 2rem;
-}
-#main-4 .container .col-md-6 {
-  overflow: hidden;
-  position: relative;
-  padding: 0 8px;
-}
-#main-4 .container .col-md-6 .textbox {
-  position: absolute;
-  top: 40%;
-  right: 35px;
-  font-size: 35px;
-  color: #fff;
-}
-#main-4 .container .col-md-6 .textbox span {
-  float: right;
-  font-size: 25px;
-  text-decoration: underline #fff;
-}
-.bottomBtn {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.bottomBtn .col-md-12 {
-  padding: 0 3rem;
-}
-.bottomBtn .col-md-12 a {
-  display: block;
+#main .row > div:nth-of-type(1) > input:nth-of-type(2) {
   width: 100%;
-  height: 80px;
-  background-color: #000;
-  line-height: 80px;
-  font-size: 2rem;
-  color: #fff;
+  padding: 5px;
+  border: 1px solid #333;
+  outline: none;
+  margin: 10px 0;
+}
+#main .row > div:nth-of-type(1) .yzmbox > input {
+  padding: 5px;
+  margin: 10px 0;
+  width: 70%;
+}
+#main .row > div:nth-of-type(1) .yzmbox button {
+  margin: 10px 0;
+}
+#main .row > div:nth-of-type(1) > input:nth-of-type(3) {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #333;
+  outline: none;
+  margin: 10px 0;
+}
+#main .row > div:nth-of-type(1) > input:nth-of-type(4) {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #333;
+  outline: none;
+  margin: 10px 0;
+}
+#main .row > div:nth-of-type(1) .quickLogin {
+  margin-top: 60px;
+}
+#main .row > div:nth-of-type(1) .quickLogin a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+#main .row > div:nth-of-type(1) .quickLogin a:nth-of-type(1) {
+  background: url(../img/spritesheet.png) no-repeat -390px -73px;
+}
+#main .row > div:nth-of-type(1) .quickLogin a:nth-of-type(2) {
+  background: url(../img/spritesheet.png) no-repeat -390px -134px;
+}
+#main .row > div:nth-of-type(1) .quickLogin a:nth-of-type(3) {
+  background: url(../img/spritesheet.png) no-repeat -390px -194px;
+}
+#main .row > div:nth-of-type(1) > div:last-of-type {
+  margin-top: 30px;
+}
+#main .row > div:nth-of-type(1) > div:last-of-type a {
+  padding-left: 40px;
+  padding-right: 40px;
 }
