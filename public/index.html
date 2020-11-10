@@ -17,7 +17,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <script src="./js/lib/swiper-bundle.js"></script>
-    <!--mine-->>
+    <!--mine-->
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js" type="module" defer="defer"></script>
 
@@ -225,10 +225,37 @@
                 </li>
             </ul>
             <div id="nav-right" class="pull-right">
-                <li>
-                    <fieldset>
-                        <input type="search" name="search" id="search" placeholder="搜索">
-                        <!-- <button class="search-submit"><span class="glyphicon glyphicon-search"></span></button> -->
+                <li id="searching">
+                    <!-- 搜索 -->
+                    <fieldset class="clearfix">
+                        <input type="text" placeholder="搜索" id="search" autocomplete="off">
+                        <div class="magnifier">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                        <div class="tips">
+                            <ul>
+                                <p>搜索推荐</p>
+                                <li><a href="">凉鞋</a></li>
+                                <li><a href="">儿童凉鞋</a></li>
+                                <li><a href="">短袖T恤</a></li>
+                                <li><a href="">跑步鞋</a></li>
+                                <li><a href="">熊猫鞋</a></li>
+                                <li><a href="">GO WALKS 5</a></li>
+                                <li><a href="">KOZMIKS</a></li>
+                                <li><a href="">美少女战士联名</a></li>
+                            </ul>
+                            <ul>
+                                <p>搜索记录</p>
+                                <li><a href="">跑步鞋</a></li>
+                                <li><a href="">熊猫鞋</a></li>
+                                <li><a href="">GO WALKS 5</a></li>
+                                <li><a href="">KOZMIKS</a></li>
+                                <li><a href="">美少女战士联名</a></li>
+                            </ul>
+                            <div style="float: right;">
+                                <span class="glyphicon glyphicon-trash" style="font-size: 10px; padding: 10px 8px;"></span>
+                            </div>
+                        </div>
                     </fieldset>
                 </li>
                 <li>

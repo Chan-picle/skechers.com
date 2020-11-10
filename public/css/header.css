@@ -126,21 +126,6 @@
   float: left;
   line-height: 50px;
 }
-.navbar #nav-right > li:nth-of-type(1) {
-  position: absolute;
-  border: 1px solid #b1b1b2;
-  width: 132px;
-  border-radius: 2px;
-  line-height: 25px;
-  margin-top: 10px;
-}
-.navbar #nav-right > li:nth-of-type(1) input {
-  width: 100px;
-  border: 0;
-  outline: none;
-  padding: 0 1rem;
-  transition: all 1s;
-}
 .navbar #nav-right > li:nth-of-type(2) {
   margin-left: 235px;
 }

@@ -1,0 +1,114 @@
+<style>
+    fieldset {
+        position: absolute;
+        top: 10px;
+        left: 300px;
+        width: 300px;
+    }
+    
+    #search {
+        width: 130px;
+        float: right;
+        transition: width 1s;
+        outline: none;
+    }
+    
+    .magnifier {
+        position: absolute;
+        top: 3px;
+        right: 0;
+    }
+    
+    span {
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
+    .tips {
+        position: absolute;
+        /* width: 100%; */
+        width: 0%;
+        top: 27px;
+        box-sizing: border-box;
+        border-top: 0;
+        transition: width 0.9s;
+        overflow: hidden;
+        height: 300px;
+        right: 0;
+    }
+    
+    .tips ul {
+        float: left;
+        padding: 0;
+        width: 45%;
+        padding: 0 0 0 24px;
+    }
+    
+    .tips ul p {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    
+    .tips ul li {
+        list-style: none;
+        font-size: 10px;
+        padding: 3px 0;
+    }
+</style>
+
+
+<div style="position: relative;">
+    <fieldset class="clearfix">
+        <input type="text" placeholder="搜索" id="search" autocomplete="off">
+        <div class="magnifier">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div class="tips">
+            <ul>
+                <p>搜索推荐</p>
+                <li><a href="">凉鞋</a></li>
+                <li><a href="">儿童凉鞋</a></li>
+                <li><a href="">短袖T恤</a></li>
+                <li><a href="">跑步鞋</a></li>
+                <li><a href="">熊猫鞋</a></li>
+                <li><a href="">GO WALKS 5</a></li>
+                <li><a href="">KOZMIKS</a></li>
+                <li><a href="">美少女战士联名</a></li>
+            </ul>
+            <ul>
+                <p>搜索记录</p>
+                <li><a href="">跑步鞋</a></li>
+                <li><a href="">熊猫鞋</a></li>
+                <li><a href="">GO WALKS 5</a></li>
+                <li><a href="">KOZMIKS</a></li>
+                <li><a href="">美少女战士联名</a></li>
+            </ul>
+            <div style="float: right;">
+                <span class="glyphicon glyphicon-trash" style="font-size: 10px; padding: 10px 8px;"></span>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<script>
+    // var mySwiper = new Swiper('#small-slider', {
+    //     loop: true, // 循环模式选项
+    //     autoplay: true
+    // })
+    $('#search').on('focus', function() {
+        $(this).css('width', '300px');
+        $('.tips').css({
+            width: '100%',
+            border: ' 1px solid #333',
+            'border-top': '0'
+        });
+    });
+    $('#search').on('blur', function() {
+        $(this).css('width', '150px');
+        $('.tips').css({
+            width: '0%',
+            border: '0'
+        });
+    });
+</script>

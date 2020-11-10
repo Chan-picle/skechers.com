@@ -126,29 +126,62 @@
   float: left;
   line-height: 50px;
 }
-.navbar #nav-right > li:nth-of-type(1) {
+.navbar #nav-right .searchbox fieldset {
+  /* border: 1px solid #333; */
   position: absolute;
-  border: 1px solid #b1b1b2;
-  width: 132px;
-  border-radius: 2px;
-  line-height: 25px;
-  margin-top: 10px;
+  top: 10px;
+  left: 300px;
+  width: 300px;
 }
-.navbar #nav-right > li:nth-of-type(1) input {
-  width: 100px;
-  border: 0;
+.navbar #nav-right .searchbox fieldset #search {
+  width: 130px;
+  float: right;
+  transition: width 1s;
   outline: none;
-  padding: 0 1rem;
-  transition: all 1s;
 }
-.navbar #nav-right > li:nth-of-type(2) {
+.navbar #nav-right .searchbox fieldset .magnifier {
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+.navbar #nav-right .searchbox fieldset .magnifier span {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.navbar #nav-right .searchbox fieldset .tips {
+  position: absolute;
+  width: 0%;
+  top: 27px;
+  box-sizing: border-box;
+  border-top: 0;
+  transition: width 0.9s;
+  overflow: hidden;
+  height: 300px;
+  right: 0;
+}
+.navbar #nav-right .searchbox fieldset .tips ul {
+  float: left;
+  padding: 0;
+  width: 45%;
+  padding: 0 0 0 24px;
+}
+.navbar #nav-right .searchbox fieldset .tips ul p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.navbar #nav-right .searchbox fieldset .tips ul li {
+  list-style: none;
+  font-size: 10px;
+  padding: 3px 0;
+}
+.navbar #nav-right > li:nth-of-type(1) {
   margin-left: 235px;
 }
-.navbar #nav-right > li:nth-of-type(2) a {
+.navbar #nav-right > li:nth-of-type(1) a {
   color: #666;
   line-height: 50px;
 }
-.navbar #nav-right > li:nth-of-type(2) a span {
+.navbar #nav-right > li:nth-of-type(1) a span {
   font-size: 25px;
   line-height: 50px;
   vertical-align: middle;

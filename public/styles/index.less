@@ -232,3 +232,70 @@
         }
     }
 }
+#nav-right{
+    >li:first-of-type{
+        height: 30px;
+        width: 310px;
+        position: absolute;
+        top:10px;
+        right:205px;
+        fieldset {
+            /* border: 1px solid #333; */
+            position: absolute;
+            // top: 10px;
+            // left: 300px;
+            width: 300px;
+            height: 100%;
+        }
+        
+        #search {
+            width: 130px;
+            height: 100%;
+            float: right;
+            transition: width 1s;
+            outline: none;
+        }
+        
+        .magnifier {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            span {
+                padding: 0 10px;
+                cursor: pointer;
+            }
+        }
+        .tips {
+            position: absolute;
+            /* width: 100%; */
+            width: 0%;
+            top: 27px;
+            box-sizing: border-box;
+            border-top: 0;
+            transition: width 0.9s;
+            overflow: hidden;
+            height: 300px;
+            right: 0;
+            background-color: #fff;
+            z-index: 999;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            ul {
+                float: left;
+                padding: 0;
+                width: 45%;
+                padding: 0 0 0 24px;
+                p {
+                    margin: 10px 0;
+                    font-weight: bold;
+                }
+                li {
+                    list-style: none;
+                    font-size: 10px;
+                    padding: 3px 0;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}

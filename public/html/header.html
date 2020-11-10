@@ -199,11 +199,9 @@
             </li>
         </ul>
         <div id="nav-right" class="pull-right">
+            <!-- <div id="searchbox" style="background-color: red;"></div> -->
             <li>
-                <fieldset>
-                    <input type="search" name="search" id="search" placeholder="搜索">
-                    <!-- <button class="search-submit"><span class="glyphicon glyphicon-search"></span></button> -->
-                </fieldset>
+                <!--搜索-->
             </li>
             <li>
                 <div class="reg-log"><a href="./html/register.html"><span class="glyphicon glyphicon-user"></span>登陆|注册</a></div>
@@ -245,5 +243,21 @@
     })
     $('#closetop').on('click', function() {
         $(this.parentNode).css('display', 'none');
-    })
+    });
+    //搜索
+    $('#search').on('focus', function() {
+        $(this).css('width', '300px');
+        $('.tips').css({
+            width: '100%',
+            border: ' 1px solid #333',
+            'border-top': '0'
+        });
+    });
+    $('#search').on('blur', function() {
+        $(this).css('width', '150px');
+        $('.tips').css({
+            width: '0%',
+            border: '0'
+        });
+    });
 </script>
