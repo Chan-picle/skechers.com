@@ -1,6 +1,7 @@
 import './lib/jquery.js';
 import './lib/jquery.md5.js';
 import cookie from './lib/cookie.js';
+import './lib/searchbox.js';
 
 $('#header').load('../html/header.html');
 $('#footer').load('../html/footer.html');

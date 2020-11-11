@@ -1,0 +1,103 @@
+{
+    "0": {
+        "big": [
+            { "src": "img/product/p8-c1-b1", "alt": "main-纪念碑灰" },
+            { "src": "img/product/p8-c1-b2", "alt": "detail2-纪念碑灰" },
+            { "src": "img/product/p8-c1-b3", "alt": "detail3-纪念碑灰" },
+            { "src": "img/product/p8-c1-b4", "alt": "detail4-纪念碑灰" },
+            { "src": "img/product/p8-c1-b5", "alt": "detail5-纪念碑灰" }
+        ],
+        "small": [
+            { "src": "img/product/p8-c1-s1", "alt": "small1-纪念碑灰" },
+            { "src": "img/product/p8-c1-s2", "alt": "small2-纪念碑灰" },
+            { "src": "img/product/p8-c1-s3", "alt": "small3-纪念碑灰" },
+            { "src": "img/product/p8-c1-s4", "alt": "small4-纪念碑灰" },
+            { "src": "img/product/p8-c1-s5", "alt": "small5-纪念碑灰" }
+        ]
+    }
+}
+
+
+{
+    "0": {
+        "big": [
+            { "src": "img/product/p6-c1-b1", "alt": "main-碳黑" },
+            { "src": "img/product/p6-c1-b2", "alt": "detail2-碳黑" },
+            { "src": "img/product/p6-c1-b3", "alt": "detail3-碳黑" },
+            { "src": "img/product/p6-c1-b4", "alt": "detail4-碳黑" },
+            { "src": "img/product/p6-c1-b5", "alt": "detail5-碳黑" }
+        ],
+        "small": [
+            { "src": "img/product/p6-c1-s1", "alt": "small1-碳黑" },
+            { "src": "img/product/p6-c1-s2", "alt": "small2-碳黑" },
+            { "src": "img/product/p6-c1-s3", "alt": "small3-碳黑" },
+            { "src": "img/product/p6-c1-s4", "alt": "small4-碳黑" },
+            { "src": "img/product/p6-c1-s5", "alt": "small5-碳黑" }
+        ]
+    },
+    "1": {
+        "big": [
+            { "src": "img/product/p6-c2-b1", "alt": "main-浅雪青色" },
+            { "src": "img/product/p6-c2-b2", "alt": "detail2-浅雪青色" },
+            { "src": "img/product/p6-c2-b3", "alt": "detail3-浅雪青色" },
+            { "src": "img/product/p6-c2-b4", "alt": "detail4-浅雪青色" },
+            { "src": "img/product/p6-c2-b5", "alt": "detail5-浅雪青色" }
+        ],
+        "small": [
+            { "src": "img/product/p6-c2-s1", "alt": "small1-浅雪青色" },
+            { "src": "img/product/p6-c2-s2", "alt": "small2-浅雪青色" },
+            { "src": "img/product/p6-c2-s3", "alt": "small3-浅雪青色" },
+            { "src": "img/product/p6-c2-s4", "alt": "small4-浅雪青色" },
+            { "src": "img/product/p6-c2-s5", "alt": "small5-浅雪青色" }
+        ]
+
+    },
+    "2": {
+        "big": [
+            { "src": "img/product/p6-c3-b1", "alt": "main-石英粉" },
+            { "src": "img/product/p6-c3-b2", "alt": "detail2-石英粉" },
+            { "src": "img/product/p6-c3-b3", "alt": "detail3-石英粉" },
+            { "src": "img/product/p6-c3-b4", "alt": "detail4-石英粉" },
+            { "src": "img/product/p6-c3-b5", "alt": "detail5-石英粉" }
+        ],
+        "small": [
+            { "src": "img/product/p6-c3-s1", "alt": "small1-石英粉" },
+            { "src": "img/product/p6-c3-s2", "alt": "small2-石英粉" },
+            { "src": "img/product/p6-c3-s3", "alt": "small3-石英粉" },
+            { "src": "img/product/p6-c3-s4", "alt": "small4-石英粉" },
+            { "src": "img/product/p6-c3-s5", "alt": "small5-石英粉" }
+        ]
+    },
+    "3": {
+        "big": [
+            { "src": "img/product/p6-c3-b1", "alt": "main-瀑布蓝" },
+            { "src": "img/product/p6-c3-b2", "alt": "detail2-瀑布蓝" },
+            { "src": "img/product/p6-c3-b3", "alt": "detail3-瀑布蓝" },
+            { "src": "img/product/p6-c3-b4", "alt": "detail4-瀑布蓝" },
+            { "src": "img/product/p6-c3-b5", "alt": "detail5-瀑布蓝" }
+        ],
+        "small": [
+            { "src": "img/product/p6-c3-s1", "alt": "small1-瀑布蓝" },
+            { "src": "img/product/p6-c3-s2", "alt": "small2-瀑布蓝" },
+            { "src": "img/product/p6-c3-s3", "alt": "small3-瀑布蓝" },
+            { "src": "img/product/p6-c3-s4", "alt": "small4-瀑布蓝" },
+            { "src": "img/product/p6-c3-s5", "alt": "small5-瀑布蓝" }
+        ]
+    },
+    "4": {
+        "big": [
+            { "src": "img/product/p6-c3-b1", "alt": "main-丝绸酒红" },
+            { "src": "img/product/p6-c3-b2", "alt": "detail2-丝绸酒红" },
+            { "src": "img/product/p6-c3-b3", "alt": "detail3-丝绸酒红" },
+            { "src": "img/product/p6-c3-b4", "alt": "detail4-丝绸酒红" },
+            { "src": "img/product/p6-c3-b5", "alt": "detail5-丝绸酒红" }
+        ],
+        "small": [
+            { "src": "img/product/p6-c3-s1", "alt": "small1-丝绸酒红" },
+            { "src": "img/product/p6-c3-s2", "alt": "small2-丝绸酒红" },
+            { "src": "img/product/p6-c3-s3", "alt": "small3-丝绸酒红" },
+            { "src": "img/product/p6-c3-s4", "alt": "small4-丝绸酒红" },
+            { "src": "img/product/p6-c3-s5", "alt": "small5-丝绸酒红" }
+        ]
+    }
+}

@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
-http.get('https://store.skechers.cn/women/women-campaigns/women-new/', (res) => {
+http.get('https://store.skechers.cn/on/demandware.store/Sites-skechers-cn-Site/zh_CN/Product-Show?pid=%20237110&dwvar_%20237110=NVY&selectcl=true', (res) => {
     const { statusCode } = res; // 解构获得http状态码
     const contentType = res.headers['content-type']; // 获得contenttype
 
@@ -43,7 +43,7 @@ http.get('https://store.skechers.cn/women/women-campaigns/women-new/', (res) => 
                 res.setEncoding('binary'); // 设置成二进制
                 res.on('data', chunk => imgData += chunk);
                 res.on('end', () => {
-                    fs.writeFile(path.join(__dirname, 'public', 'img', 'product', filename), imgData, 'binary', err => {
+                    fs.writeFile(path.join(__dirname, 'public', 'img', 'product', 'shose', filename), imgData, 'binary', err => {
                         if (err) console.log(err);
                         console.log(i, '文件已保存');
                     });
