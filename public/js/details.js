@@ -21,10 +21,16 @@ let small = $('#small'),
     big = $('#big'),
     magnifiler = $('#magnif');
 var bigPic = $('#big .swiper-slide-active'); //可能随时变动
+magnifiler.css('display', 'none');
+big.css('display', 'none');
+$('.bigbox').css('display', 'none');
+
 
 small.on('mouseenter', function() {
     magnifiler.css('display', 'block');
     big.css('display', 'block');
+    $('.bigbox').css('display', 'block');
+
     magnifiler.css({
         width: `357px`,
         height: `357px`
@@ -53,8 +59,16 @@ small.on('mouseenter', function() {
 small.on('mouseleave', function() { //鼠标移除事件
     magnifiler.css('display', 'none');
     big.css('display', 'none');
-});
+    $('.bigbox').css('display', 'none');
 
+});
+//modal
 $('#myModal').on('shown.bs.modal', function() {
     $('#myInput').focus()
+});
+//tab
+$('.likeTabs li').on('click', function() {
+    $(this).addClass('tab-active').siblings().removeClass('tab-active');
+    let index = $(this).index();
+    $('.likeTabs>div').eq(index).addClass('tab-show').siblings().removeClass('tab-show');
 })

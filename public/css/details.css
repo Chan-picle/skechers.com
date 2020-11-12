@@ -446,7 +446,169 @@
 .product-right {
   width: 40%;
   height: 500px;
-  background-color: salmon;
   float: left;
   padding-right: 50px;
+  padding-left: 10px;
+}
+.product-right .p-tag {
+  margin-left: -20px;
+}
+.product-right .p-price {
+  border-bottom: 1px solid #666;
+}
+.product-right .p-price del {
+  font-weight: bold;
+}
+.product-right .p-price em {
+  font-style: normal;
+  font-weight: bold;
+  color: red;
+}
+.product-right .p-color > div button {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #d6d6d6;
+  outline: none;
+}
+.product-right .p-color > div button img {
+  width: 100%;
+}
+.product-right .p-color > div button.btn-active {
+  border: 2px solid #000;
+}
+.product-right .p-size {
+  margin: 10px 0;
+}
+.product-right .p-size a {
+  color: #666;
+}
+.product-right .p-size > div:nth-child(1) .dropdown > button {
+  width: 250px;
+}
+.product-right .p-size > div:nth-child(1) .dropdown-menu {
+  width: 250px;
+  padding: 0;
+  text-align: center;
+}
+.product-right .p-size > div:nth-child(1) .dropdown-menu .row {
+  width: 98%;
+  margin: 0;
+}
+.product-right .p-size > div:nth-child(1) .dropdown-menu .row .col-xs-2 {
+  border: 1px solid #d6d6d6;
+  padding: 0;
+}
+.product-right .p-size > div:nth-child(1) .dropdown-menu .row .col-xs-2 button {
+  padding: 5px;
+  border: 0;
+  background-color: #fff;
+}
+.product-right .p-size .p-stock {
+  width: 80px;
+  position: relative;
+  height: 100%;
+}
+.product-right .p-size .p-stock input {
+  width: 70%;
+  outline: none;
+  text-align: center;
+  height: 32px;
+  border: 1px solid #d6d6d6;
+}
+.product-right .p-size .p-stock button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  border: 1px solid #d6d6d6;
+  background-color: #fff;
+  outline: none;
+}
+.product-right .p-size .p-stock #mins {
+  left: -32px;
+}
+.product-right .p-size .p-stock #plus {
+  right: 0;
+}
+.product-right .p-btn button {
+  width: 45% ;
+}
+.product-right .p-link {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+.product-right .p-link a {
+  color: #666;
+  padding: 0 5px;
+}
+.p-details {
+  margin: 50px 30px;
+  border-top: 1px solid #333;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+.p-details .details-pic {
+  width: 400px;
+  height: 400px;
+  padding: 0;
+}
+.p-details .details-pic img {
+  width: 100%;
+}
+.p-details #detail_body {
+  width: 610px;
+  margin-left: 430px;
+  padding-top: 50px;
+}
+.p-details #detail_body dd {
+  line-height: 22px;
+  margin: 5px 0 10px  ;
+}
+.p-details #detail_body dt {
+  line-height: 30px;
+  font-size: 22px;
+}
+.p-details #detail_body dl:first-of-type dt {
+  font-size: 32px;
+  line-height: 56px;
+}
+.p-details .detail-tips {
+  margin-left: 430px;
+  width: 610px;
+  color: #bbb;
+}
+.likeTabs {
+  width: 100%;
+}
+.likeTabs ul {
+  width: 355px;
+}
+.likeTabs ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 30px;
+  line-height: 50px;
+  padding: 10px 0px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.likeTabs ul li.tab-active {
+  border-bottom: 4px solid #002952;
+  color: #002952;
+}
+.likeTabs ul li:nth-child(1):after {
+  content: '';
+  display: block;
+  height: 40px ;
+  width: 4px;
+  position: absolute;
+  top: 16px;
+  right: -23px;
+  background-color: #333;
+}
+.likeTabs > div {
+  display: none;
+}
+.likeTabs > div.tab-show {
+  display: block;
 }

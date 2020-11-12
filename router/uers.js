@@ -21,13 +21,16 @@ router.route('/reg')
             if (err) throw err;
             if (results.length) {
                 //用户名已存在
-                res.json({ msg: '注册失败', username: req.body.username, err: 1 });
+                res.json({ msg: '用户名已存在', username: req.body.username, err: 1 });
             } else {
                 //用户名可用，注册
                 //后端密码加密
                 let md5 = crypto.createHash('md5');
                 let md5Psw = md5.update(req.body.password).digest('hex');
-                let insertSql = `insert into users (user_name,user_password,user_phone,user_sex,user_birth) values ('${req.body.username}','${md5Psw}','${req.body.phone}','${req.body.sex}','${req.body.birth}')`
+                let insertSql = `insert into users (user_name,user_password,user_phone,user_sex,user_birth) values ('${req.body.username}','${md5Psw}','${req.body.phone}','${req.body.sex}','${req.body.birth}')`;
+                if (req.body.birth == '') {
+                    insertSql = `insert into users (user_name,user_password,user_phone,user_sex) values ('${req.body.username}','${md5Psw}','${req.body.phone}','${req.body.sex}')`;
+                }
                 conn.query(insertSql, (err, results) => { //results是结果数组
                     if (err) throw err;
                     if (results.insertId) {
@@ -48,7 +51,39 @@ router.route('/login')
     .post((req, res, next) => {
         if (req.cookies.username && req.cookies.isLogin === 'true') {
             //检查cookie,用户已经登陆
-            console.log('用户已登录');
+            // console.log('用户已登录');
+            res.json({ msg: '已登录', err: 0 });
+        } else {
+            if (req.body.flag === '1') {
+                //密码登陆
+                let md5 = crypto.createHash('md5');
+                let md5Psw = md5.update(req.body.password).digest('hex');
+                let searchSql = `select * from users where user_name='${req.body.username}'and user_password='${md5Psw}'`;
+                conn.query(searchSql, (err, results) => {
+                    if (err) throw err;
+                    console.log(results);
+                    if (results.length) {
+                        res.cookie('username', req.body.username);
+                        res.cookie('isLogin', true);
+                        res.json({ msg: '登陆成功', username: req.body.username, err: 0 });
+                    } else {
+                        res.json({ msg: '登陆失败', username: req.body.username, err: 1 });
+                    }
+                })
+            } else if (req.body.flag === '2') {
+                //电话登陆
+                let searchSql = `select * from users where user_phone='${req.body.phone}'`;
+                conn.query(searchSql, (err, results) => {
+                    if (err) throw err;
+                    if (results.length) {
+                        res.cookie('userphone', req.body.phone);
+                        res.cookie('isLogin', true);
+                        res.json({ msg: '登陆成功', userphone: req.body.phone, err: 0 })
+                    } else {
+                        res.json({ msg: '登陆失败', userphone: req.body.phone, err: 1 })
+                    }
+                });
+            }
         }
     });
 module.exports = router;

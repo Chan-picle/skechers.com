@@ -62,7 +62,7 @@
             </div>
 
         </div>
-        <div class="product-right">
+        <div class="product-right clearfix">
             <div class="p-tag"><img src="../img/VIP.png" alt=""></div>
             <div class="p-title">
                 <h1>ON-THE-GO CITY 2</h1>
@@ -72,7 +72,7 @@
             </div>
             <div class="p-price">
                 <h2>
-                    <del>￥1000</del><em>￥799</em>
+                    <del>￥1000.00</del><em>￥799.00</em>
                 </h2>
             </div>
             <div class="p-no">
@@ -81,77 +81,79 @@
             <div class="p-color">
                 <p>颜色:<span>栗色</span></p>
                 <div>
-                    <button><img src="../img/product/p1-c1-s1" alt=""></button>
-                    <button><img src="../img/product/p1-c2-s1" alt=""></button>
-                    <button><img src="../img/product/p1-c3-s1" alt=""></button>
+                    <button class="btn-active"><img src="../img/product/p1-c1-s1.jpg" alt=""></button>
+                    <button><img src="../img/product/p1-c2-s1.jpg" alt=""></button>
+                    <button><img src="../img/product/p1-c3-s1.jpg" alt=""></button>
                 </div>
             </div>
-            <div class="p-size">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="p-size ">
+                <div class="clearfix">
+                    <div class="dropdown pull-left">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       尺码
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <button>35</button>
+                         <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <button>35</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>36</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>37</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>38</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>39</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>40</button>
+                                </div>
                             </div>
-                            <div class="col-xs-2">
-                                <button>36</button>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <button>41</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>42</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>43</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>45</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>46</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>47</button>
+                                </div>
                             </div>
-                            <div class="col-xs-2">
-                                <button>37</button>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <button>48</button>
+                                </div>
+                                <div class="col-xs-2">
+                                    <button>49</button>
+                                </div>
                             </div>
-                            <div class="col-xs-2">
-                                <button>38</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>39</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>40</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <button>41</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>42</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>43</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>45</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>46</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>47</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <button>48</button>
-                            </div>
-                            <div class="col-xs-2">
-                                <button>49</button>
-                            </div>
-                        </div>
-                        <!-- <li><a href="#">A</a><a href="">B</a></li>
+                            <!-- <li><a href="#">A</a><a href="">B</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li> -->
-                        <!-- <li role="separator" class="divider"></li>
+                            <!-- <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li> -->
-                    </ul>
-                </div>
-                <div class="p-stock">
-                    <button>-</button>
-                    <input type="text">
-                    <button>+</button>
+                        </ul>
+                    </div>
+                    <div class="p-stock pull-right">
+                        <button id="mins">-</button>
+                        <input type="text" value="1">
+                        <button id="plus">+</button>
+                    </div>
                 </div>
                 <div class="p-alert">
                     <!-- Button trigger modal -->
@@ -175,143 +177,162 @@
                     </div>
                 </div>
             </div>
-            <div class="p-btn">
-                <button class="btn btn-default btn-primary">加入购物车</button>
-                <button class="btn btn-default btn-danger">立即购买</button>
+            <div class="p-btn clearfix">
+                <button class="btn btn-default btn-primary pull-left">加入购物车</button>
+                <button class="btn btn-default btn-danger pull-right">立即购买</button>
             </div>
-            <div class="p-link pull-right">
-                <a href="">添加到心愿单</a>
-                <a href="">分享</a>
-                <a href="">手机购买</a>
+            <div class="p-link clearfix">
+                <div class="pull-right">
+                    <a href="">添加到心愿单</a>
+                    <a href="">分享</a>
+                    <a href="">手机购买</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="p-details container">
-        <div class="details-pic">
-            <img src="../img/product/p1-c1-b1.jpg" alt="">
-        </div>
-        <div id="detail_body">
-            <dl>
-                <dt>男子梭织连帽外套</dt>
-                <dd>考究利落的剪裁融合宽松版型，助力自然流畅的运动体验，袖部字母LOGO元素彰显时尚个性。连帽加松紧抽绳设计，实用又防风。袖口内侧松紧橡筋细节，稳固贴合腕部。简洁“S”标印花，时尚不呆板。亲肤舒适面料，带来健康穿着享受。</dd>
-            </dl>
-            <dl>
-                <dt>连帽设计</dt>
-                <dd>连帽加松紧抽绳设计，实用又防风</dd>
-            </dl>
-            <dl>
-                <dt>袖口细节</dt>
-                <dd>袖口内侧松紧橡筋细节，稳固贴合腕部</dd>
-            </dl>
-            <dl>
-                <dt>LOGO元素</dt>
-                <dd>简洁“S”标印花，时尚不呆板</dd>
-            </dl>
-            <dl>
-                <dt>面料细节</dt>
-                <dd>亲肤舒适面料，带来健康穿着享受</dd>
-            </dl>
-        </div>
-        <div class="detail-tips small">
-            敬请注意，同款但不同配色的商品有可能在材质等方面存在些许差异；商品图片均为官方拍摄，手机或电脑等其他显示设备可能会造成色差；页面显示的尺码数据均为手工测量，与收到商品可能存在一定的误差值属于正常情况；本页面中的商品介绍内容仅供参考，商品具体信息请以收到的实物为准。另，内衣类商品不提供试穿服务，商品一经签收无质量问题不提供退换货服务，给您造成的不便望您谅解。
-        </div>
+        <div class="p-details pull-left">
+            <div class="details-pic product-left">
+                <img src="../img/product/p1-c1-b1.jpg" alt="">
+            </div>
+            <div id="detail_body">
+                <dl>
+                    <dt>男子梭织连帽外套</dt>
+                    <dd>考究利落的剪裁融合宽松版型，助力自然流畅的运动体验，袖部字母LOGO元素彰显时尚个性。连帽加松紧抽绳设计，实用又防风。袖口内侧松紧橡筋细节，稳固贴合腕部。简洁“S”标印花，时尚不呆板。亲肤舒适面料，带来健康穿着享受。</dd>
+                </dl>
+                <dl>
+                    <dt>连帽设计</dt>
+                    <dd>连帽加松紧抽绳设计，实用又防风</dd>
+                </dl>
+                <dl>
+                    <dt>袖口细节</dt>
+                    <dd>袖口内侧松紧橡筋细节，稳固贴合腕部</dd>
+                </dl>
+                <dl>
+                    <dt>LOGO元素</dt>
+                    <dd>简洁“S”标印花，时尚不呆板</dd>
+                </dl>
+                <dl>
+                    <dt>面料细节</dt>
+                    <dd>亲肤舒适面料，带来健康穿着享受</dd>
+                </dl>
+            </div>
+            <div class="detail-tips small">
+                敬请注意，同款但不同配色的商品有可能在材质等方面存在些许差异；商品图片均为官方拍摄，手机或电脑等其他显示设备可能会造成色差；页面显示的尺码数据均为手工测量，与收到商品可能存在一定的误差值属于正常情况；本页面中的商品介绍内容仅供参考，商品具体信息请以收到的实物为准。另，内衣类商品不提供试穿服务，商品一经签收无质量问题不提供退换货服务，给您造成的不便望您谅解。
+            </div>
 
-    </div>
-    <div class="likeTabs container">
-        <ul>
-            <li class="active">您可能喜欢</li>|
-            <li>浏览记录</li>
-        </ul>
-        <div class="show">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/female/color_00ps_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>WOMEN CLOAT</h3>
-                            <h6>女子外套</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+        </div>
+        <div class="likeTabs pull-left">
+            <ul class="clearfix center-block">
+                <li class="tab-active">您可能喜欢</li>
+                <li>浏览记录</li>
+            </ul>
+            <div class="tab-show">
+                <div class="row">
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/female/color_00ps_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>WOMEN CLOAT</h3>
+                                    <h6>女子外套</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/female/color_bbk_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>女子靴子</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/female/color_bbk_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>女子靴子</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/female/color_burg_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>女子运动鞋</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/female/color_burg_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>女子运动鞋</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/female/color_ntw_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>女子运动鞋</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/female/color_ntw_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>女子运动鞋</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div>
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/male/color_0018_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>WOMEN CLOAT</h3>
-                            <h6>男子外套</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+            <div>
+                <div class="row">
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/male/color_0018_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>WOMEN CLOAT</h3>
+                                    <h6>男子外套</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/male/color_004f_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>男子外套</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/male/color_004f_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>男子外套</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/male/color_00p9_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>男子运动外套</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/male/color_00p9_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>男子运动外套</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../img/product/male/color_brn_1.jpg" alt="...">
-                        <div class="caption">
-                            <h3>BOOT</h3>
-                            <h6>男子运动鞋</h6>
-                            <p><del>￥1000</del><em>￥599</em></p>
+                    </a>
+                    <a href="">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="../img/product/male/color_brn_1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>BOOT</h3>
+                                    <h6>男子运动鞋</h6>
+                                    <p><del>￥1000</del><em>￥599</em></p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
     <div id="footer"></div>
 
 </body>

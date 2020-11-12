@@ -392,6 +392,15 @@
   padding: 0 50px;
   display: none!important;
 }
+#main .row .tabs > div .looking {
+  display: block;
+  position: absolute;
+  right: 87px;
+  top: 141px;
+}
+#main .row .tabs > div .looking span {
+  font-size: 30px!important;
+}
 #main .row .tabs > div.show {
   display: block!important;
 }
@@ -408,7 +417,7 @@
   margin: 10px;
 }
 #main .row .tabs > div .yzmbox input {
-  width: 65%;
+  width: 60%;
   padding: 10px;
 }
 #main .row .tabs > div .yzmbox button {
