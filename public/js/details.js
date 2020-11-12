@@ -16,19 +16,6 @@ $('#footer').load('../html/footer.html');
         }
     });
 })();
-
-const mySwiper4 = new Swiper('.swiperProduct', {
-    direction: 'vertical',
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function(index, className) {
-            return `<li class="${className}"><img src="../img/product/p1-c1-s${index+1}.jpg"></li>`;
-        }
-    }
-});
-
 //放大镜
 let small = $('#small'),
     big = $('#big'),
@@ -67,3 +54,7 @@ small.on('mouseleave', function() { //鼠标移除事件
     magnifiler.css('display', 'none');
     big.css('display', 'none');
 });
+
+$('#myModal').on('shown.bs.modal', function() {
+    $('#myInput').focus()
+})

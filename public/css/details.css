@@ -362,6 +362,10 @@
 #footer .footer-bottom img {
   margin: 0 20px;
 }
+.btn-primary {
+  background-color: #002952 !important;
+  border-color: #002952 !important;
+}
 .product-top {
   margin-bottom: 48px;
 }
@@ -426,9 +430,6 @@
   top: 0;
   overflow: hidden;
   border: 0;
-}
-.product-left .bigbox #big {
-  display: none;
 }
 .product-left .bigbox .swiper-container {
   width: 700px;
