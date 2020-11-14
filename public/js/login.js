@@ -1,6 +1,7 @@
 import './lib/jquery.js';
 import './lib/searchbox.js';
 import './lib/jquery.md5.js';
+import { baseUrl } from './lib/config.js';
 
 $('#header').load('../html/header.html');
 $('#footer').load('../html/footer.html');
@@ -110,7 +111,7 @@ $('#loginBtn1').on('click', function() {
     let password = $.md5($('#password').val());
     $.ajax({
         type: "post",
-        url: "http://localhost:8888/users/login",
+        url: baseUrl + "/users/login",
         data: {
             username: $('#username').val(),
             password: password,
@@ -120,7 +121,7 @@ $('#loginBtn1').on('click', function() {
         success: function(res) {
             alert(res.msg);
             if (!res.err) {
-                location.href = 'http://localhost:8888/index.html';
+                location.href = baseUrl + '/index.html';
             }
         }
     });
@@ -129,7 +130,7 @@ $('#loginBtn1').on('click', function() {
 $('#loginBtn2').on('click', function() {
     $.ajax({
         type: "post",
-        url: "http://localhost:8888/users/login",
+        url: baseUrl + "/users/login",
         data: {
             phone: $('#phone').val(),
             flag: '2'
@@ -138,7 +139,7 @@ $('#loginBtn2').on('click', function() {
         success: function(res) {
             alert(res.msg);
             if (!res.err) {
-                location.href = 'http://localhost:8888/index.html';
+                location.href = baseUrl + '/index.html';
             }
         }
     });

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const userRouter = require('./router/uers');
+const productRouter = require('./router/products');
 const cookieParser = require('cookie-parser');
 const createError = require('http-errors'); //错误管理
 
@@ -19,10 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 //cookie
 app.use(cookieParser());
 //路由
-app.use('/favicon.ico', (err, req, res, next) => {
-    next();
-});
 app.use('/users', userRouter);
+app.use('/product', productRouter);
 
 //其他路由报404错误
 app.use((req, res, next) => {

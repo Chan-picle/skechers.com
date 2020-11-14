@@ -445,7 +445,7 @@
 }
 .product-right {
   width: 40%;
-  height: 500px;
+  height: auto;
   float: left;
   padding-right: 50px;
   padding-left: 10px;
@@ -469,6 +469,7 @@
   height: 80px;
   border: 1px solid #d6d6d6;
   outline: none;
+  margin: 5px 5px;
 }
 .product-right .p-color > div button img {
   width: 100%;

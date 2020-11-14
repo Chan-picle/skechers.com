@@ -158,25 +158,30 @@
     
     
     .swiper-slide>div {
-        // background-color: aquamarine;
         float: left;
         box-sizing: border-box;
         height: 100%;
         width: 25%;
         a{
             color:#000;
+            display: block;
+            height: 100%;
             &:hover{
                 text-decoration: none;
             }
             img{
                 width: 100%;
                 padding: 10px 20px;
+                object-fit: cover;
             }
             p{
                 margin-bottom: 2px;
                 font-size: 1.5rem;
                 color: #555;
                 font-weight: 700;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             span{
                 color:#fff;
@@ -185,9 +190,7 @@
                 line-height: 1.2rem;
                 font-size: 1.2rem;
             }
-
         }
-        
     }
 }
 #main-4{

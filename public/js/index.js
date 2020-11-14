@@ -1,5 +1,6 @@
    import './lib/jquery.lazyload.min.js';
    import './lib/searchbox.js';
+   import { baseUrl } from './lib/config.js'
 
    //header fixed
    $(window).on('scroll', function() {
@@ -16,23 +17,8 @@
        autoplay: true
    })
    $('#closetop').on('click', function() {
-           $(this.parentNode).css('display', 'none');
-       })
-       //main
-   const mySwiper1 = new Swiper('.swiper1', {
-       loop: true, // 循环模式选项
-       navigation: {
-           nextEl: '.a2',
-           prevEl: '.a1',
-       }
-   });
-   const mySwiper2 = new Swiper('.swiper2', {
-       loop: true, // 循环模式选项
-       navigation: {
-           nextEl: '.you',
-           prevEl: '.zuo',
-       }
-   });
+       $(this.parentNode).css('display', 'none');
+   })
 
    //将banner的框设置的和屏幕同宽，图片大小和当前框同步
    function bannerint() {
@@ -177,9 +163,65 @@
        speed: 250,
        delay: 2000
    });
-   //lazyload picture
+   //图片懒加载
    $('[data-original]').lazyload({
        event: 'scroll',
-       effect: 'fadeIn'
-
+       threshold: 500,
+       effect: 'fadeIn',
+       skip_invisible: false
    });
+   (function() {
+       $.ajax({
+           type: "get",
+           url: baseUrl + "/product/getProducts",
+           dataType: "json",
+           success: function(res) {
+               let temp1 = ``;
+               let temp2 = ``;
+               res.forEach((elm, i) => {
+                   if (i < 4) {
+                       temp1 += `
+                       <div>
+                                <a href="./html/details.html?id=${elm.product_id}" target="_blank">
+                                    <img src=${elm.index_picture}  alt="">
+                                    <div class="text-center">
+                                        <p>${elm.title}</p>
+                                        <span>立即选购 &gt;</span>
+                                    </div>
+                                </a>
+                            </div>
+                       `;
+                   } else if (i >= 4 && i < 8) {
+                       temp2 += `
+                       <div>
+                                <a href="./html/details.html?id=${elm.product_id}" target="_blank">
+                                    <img src=${elm.index_picture}  alt="">
+                                    <div class="text-center">
+                                        <p>${elm.title}</p>
+                                        <span>立即选购 &gt;</span>
+                                    </div>
+                                </a>
+                            </div>
+                       `;
+                   }
+               });
+               $('.render-1').append(temp1);
+               $('.render-2').append(temp2);
+           }
+       });
+       const mySwiper1 = new Swiper('.swiper1', {
+           loop: true, // 循环模式选项
+           navigation: {
+               nextEl: '.a2',
+               prevEl: '.a1',
+           }
+       });
+       const mySwiper2 = new Swiper('.swiper2', {
+           loop: true, // 循环模式选项
+           navigation: {
+               nextEl: '.you',
+               prevEl: '.zuo',
+           }
+       });
+
+   })()

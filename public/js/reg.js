@@ -2,6 +2,7 @@ import './lib/jquery.js';
 import './lib/jquery.md5.js';
 import cookie from './lib/cookie.js';
 import './lib/searchbox.js';
+import { baseUrl } from './lib/config.js';
 
 $('#header').load('../html/header.html');
 $('#footer').load('../html/footer.html');
@@ -122,7 +123,7 @@ $('#register').on('click', function() {
     };
     $.ajax({
         type: "post",
-        url: "http://localhost:8888/users/reg",
+        url: baseUrl + "/users/reg",
         data: {
             username: $('#username').val(),
             password: password,
@@ -134,7 +135,7 @@ $('#register').on('click', function() {
         success: function(response) {
             alert(response.msg);
             if (!response.err) {
-                location.href = 'http://localhost:8888/index.html';
+                location.href = baseUrl + '/index.html';
             }
         }
     });
