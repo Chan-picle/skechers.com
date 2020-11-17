@@ -1,12 +1,15 @@
 const express = require('express');
 const conn = require('../dao/conn'); //数据库连接
 const crypto = require('crypto'); //加密模块
+const { sendCode } = require('../library/sendMail');
+const fs = require('fs');
+const path = require('path');
 
 const router = express.Router();
 //二级路径
 router.route('/')
     .get((req, res, next) => {
-        console.log(req.query);
+        // console.log(req.query);
         res.json({ msg: 'method is get' });
     })
     .post((req, res, next) => {
@@ -85,5 +88,28 @@ router.route('/login')
                 });
             }
         }
+    });
+//发送邮箱验证码
+router.route('/getcode')
+    .get((req, res, next) => {
+        fs.writeFile(path.join(__dirname, '..', 'temp', req.query.email), sendCode(req.query), 'utf8', (err) => {
+            if (err) console.log(err);
+            res.json({ msg: `邮件已发送至${req.query.email}，请注意查收` });
+        });
+    });
+//验证邮箱验证码是否正确
+router.route('/checkcode')
+    .get((req, res, next) => {
+        fs.readFile(path.join(__dirname, '..', 'temp', req.query.email), 'utf8', (err, data) => {
+            if (err) console.log(err);
+            console.log(data);
+            if (data === req.query.code) {
+                res.cookie('useremail', req.query.email);
+                res.cookie('isLogin', true);
+                res.json({ msg: '登陆成功,即将跳转至首页', useremail: req.query.email, err: 0 });
+            } else {
+                res.json({ msg: '登陆失败', useremail: req.query.email, err: 1 });
+            }
+        })
     });
 module.exports = router;

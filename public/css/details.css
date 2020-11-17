@@ -211,20 +211,20 @@
   line-height: 50px;
   vertical-align: middle;
 }
-.navbar #nav-right .car span::after {
-  content: "0";
+.navbar #nav-right .car a i {
   display: block;
   width: 15px;
   height: 15px;
   text-align: center;
   border-radius: 50%;
   font-size: 5px;
-  line-height: 13px;
+  line-height: 16px;
   position: absolute;
   background-color: red;
   color: #fff;
   top: 8px;
   left: -3px;
+  font-style: normal;
 }
 #smallAdd {
   position: relative;
@@ -510,7 +510,7 @@
   height: 100%;
 }
 .product-right .p-size .p-stock input {
-  width: 70%;
+  width: 61%;
   outline: none;
   text-align: center;
   height: 32px;
@@ -532,6 +532,13 @@
 }
 .product-right .p-btn button {
   width: 45% ;
+  outline: none!important;
+}
+.product-right .p-btn button:nth-of-type(1):hover {
+  background-color: #01172e !important;
+}
+.product-right .p-btn button:nth-of-type(1):active {
+  background-color: #000 !important;
 }
 .product-right .p-link {
   padding: 10px;

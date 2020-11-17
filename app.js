@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const userRouter = require('./router/uers');
+const userRouter = require('./router/users');
 const productRouter = require('./router/products');
 const cookieParser = require('cookie-parser');
 const createError = require('http-errors'); //错误管理

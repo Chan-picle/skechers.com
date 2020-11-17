@@ -1,6 +1,8 @@
 import './lib/jquery.js';
 import './lib/searchbox.js';
-import { baseUrl } from './lib/config.js'
+import { baseUrl } from './lib/config.js';
+import cookie from './lib/cookie.js';
+
 
 $('#header').load('../html/header.html');
 $('#footer').load('../html/footer.html');
@@ -156,6 +158,7 @@ $('.likeTabs li').on('click', function() {
             $('#color-tab button').on('click', function() {
                 $(this).addClass('btn-active').siblings().removeClass('btn-active');
                 colorType = $(this).index();
+                $('.p-color>p>span').text(colorArr[colorType]);
                 tempSmall.each((i, elm) => {
                     if (i <= 5 && i >= 1) {
                         // console.log(picturesUrl[1].small[0].src);
@@ -182,6 +185,76 @@ $('.likeTabs li').on('click', function() {
             //下面具体信息
             $('.details-pic img').attr('src', `../${picturesUrl[0].big[0].src}`)
             $('#detail_body').prepend(content.detail);
+            //加入购物车
+            $('.p-btn .pull-left').on('click', function() {
+                addItem(content.product_id, parseInt($('.p-stock>input').val()));
+                alert('已加入购物车');
+            });
         }
     });
 })();
+//输入框限制范围
+// 范围1-content.stock
+let stock = 10;
+$('.p-stock input').on('change', function() {
+    let count = parseInt($(this).val());
+    $('.p-stock #mins').attr('disabled', count <= 1 ? true : false);
+    if (count > stock) {
+        alert('库存不足,请重新选择数量');
+        $('.p-stock #plus').css('color', '#eee');
+        $(this).val(stock);
+    } else if (count < 1) {
+        alert('数量不能小于1');
+        $('.p-stock #mins').css('color', '#eee');
+        $(this).val(1);
+    } else {
+        $('.p-stock #plus').css('color', '#333');
+        $('.p-stock #mins').css('color', '#eee');
+    }
+});
+$('.p-stock #mins').on('click', function() {
+    let count = parseInt($('.p-stock input').val());
+    if (count > 1) {
+        $('.p-stock input').val(count - 1);
+        $('.p-stock #plus').css({ color: '#333' });
+    } else {
+        $(this).css({ color: '#eee' });
+    }
+});
+$('.p-stock #plus').on('click', function() {
+    let count = parseInt($('.p-stock input').val());
+    if (count < stock) {
+        $('.p-stock input').val(count + 1);
+        $('.p-stock #mins').css({ color: '#333' });
+        // $(this).attr('disabled', false);
+    } else {
+        alert('库存不足，请重新选择数量');
+        $(this).css({ color: '#eee' });
+    }
+});
+//加入购物车
+function addItem(id, num) {
+    let product = {
+        id: id,
+        num: num
+    };
+    let shop = cookie.get('shop');
+    if (shop) {
+        shop = JSON.parse(shop);
+        if (shop.some(elm => elm.id == id)) {
+            //修改已有商品数量
+            shop.forEach(el => {
+                el.id === id ? el.num = num : null;
+            });
+        } else {
+            //新商品存进cookie
+            shop.push(product);
+        }
+    } else {
+        shop = [];
+        shop.push(product);
+    }
+    cookie.set('shop', JSON.stringify(shop), 1);
+    $('.car-number').text(JSON.parse(cookie.get('shop')).length);
+
+}

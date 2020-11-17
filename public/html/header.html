@@ -234,10 +234,10 @@
                 </fieldset>
             </li>
             <li>
-                <div class="reg-log"><a href="./register.html"><span class="glyphicon glyphicon-user"></span>登陆|注册</a></div>
+                <div class="reg-log"><a href="./login.html"><span class="glyphicon glyphicon-user"></span><i style="font-style: normal;">登陆|注册</i></a></div>
             </li>
             <li>
-                <div class="car"><a href=""><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+                <div class="car"><a href=""><span class="glyphicon glyphicon-shopping-cart"></span><i class="car-number">0</i> 购物车</a>
                 </div>
             </li>
         </div>
@@ -290,4 +290,22 @@
             border: '0'
         });
     });
+
+    (function() {
+        let cookies = document.cookie.split(';');
+        let user = {};
+        cookies.forEach(elm => {
+            let [key, value] = elm.split('=');
+            user[key.trim()] = value;
+        });
+        if (user.shop) {
+            $('.car-number').text(JSON.parse(user.shop).length);
+        }
+        if (user.isLogin == 'true') {
+            if (user.username.length > 13) {
+                user.username = user.username.slice(0, 13) + '..';
+            }
+            $('.reg-log a i').text(user.username)
+        }
+    })();
 </script>

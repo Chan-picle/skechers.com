@@ -223,5 +223,22 @@
                prevEl: '.zuo',
            }
        });
-
-   })()
+   })();
+   //更新购物车和用户名
+   (function() {
+       let cookies = document.cookie.split(';');
+       let user = {};
+       cookies.forEach(elm => {
+           let [key, value] = elm.split('=');
+           user[key.trim()] = value;
+       });
+       if (user.shop) {
+           $('.car-number').text(JSON.parse(user.shop).length);
+       }
+       if (user.isLogin == 'true') {
+           if (user.username.length > 13) {
+               user.username = user.username.slice(0, 13) + '..';
+           }
+           $('.reg-log a i').text(user.username)
+       }
+   })();

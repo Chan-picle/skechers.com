@@ -211,20 +211,20 @@
   line-height: 50px;
   vertical-align: middle;
 }
-.navbar #nav-right .car span::after {
-  content: "0";
+.navbar #nav-right .car a i {
   display: block;
   width: 15px;
   height: 15px;
   text-align: center;
   border-radius: 50%;
   font-size: 5px;
-  line-height: 13px;
+  line-height: 16px;
   position: absolute;
   background-color: red;
   color: #fff;
   top: 8px;
   left: -3px;
+  font-style: normal;
 }
 #smallAdd {
   position: relative;

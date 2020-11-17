@@ -62,33 +62,36 @@ function vertify() {
     }
 }
 //验证码登陆
-let reg = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/;
+// let reg = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/;
+let reg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
 $('#phone').on('focus input', function() {
     if ($(this).val() === '' || !reg.test($(this).val())) {
         $(this).css({ 'outline-color': 'red', 'border-color': 'red' });
-        $(this).attr('placeholder', '电话不能为空');
+        $(this).attr('placeholder', '邮箱不能为空');
         flag3 = false;
-        vertify1()
+        vertify1();
     } else {
         $(this).css({ 'outline-color': '#333', 'border-color': '#333' });
         flag3 = true;
-        vertify1()
+        vertify1();
     }
 });
+let reg1 = /^[A-z0-9]{6}$/;
 $('#yzm').on('focus input', function() {
-    if ($(this).val() === '0000') {
+    //判断验证码是否为空
+    console.log(reg1.test($(this).val()));
+    if (!$(this).val() == '' && reg1.test($(this).val())) {
         $(this).css({ 'outline-color': '#333', 'border-color': '#333' });
         flag4 = true;
         vertify1()
     } else {
         $(this).css({ 'outline-color': 'red', 'border-color': 'red' });
-        $(this).attr('placeholder', '验证码错误');
+        $(this).attr('placeholder', '验证码不能为空');
         flag4 = false;
-        vertify1()
+        vertify1();
     }
 });
 $('#yzmBtn').on('click', () => {
-    // console.log($('#yzmBtn'));
     $('#yzmBtn').attr('disabled', true);
     let count = 5;
     let timer2 = setInterval(function() {
@@ -98,8 +101,18 @@ $('#yzmBtn').on('click', () => {
         $('#yzmBtn').attr('disabled', false).text('获取验证码');
         clearInterval(timer2);
     }, 6000);
+    //发送验证码
+    $.ajax({
+        type: "get",
+        url: baseUrl + "/users/getcode",
+        data: { email: $('#phone').val() },
+        dataType: "json",
+        success: function(res) {
+            alert(res.msg);
+        }
+    });
 });
-
+//判断两个输入框都满足
 function vertify1() {
     if (flag3 && flag4) {
         $('#loginBtn2').attr('disabled', false);
@@ -128,17 +141,29 @@ $('#loginBtn1').on('click', function() {
 });
 //验证码登陆
 $('#loginBtn2').on('click', function() {
+    // $.ajax({
+    //     type: "post",
+    //     url: baseUrl + "/users/login",
+    //     data: {
+    //         phone: $('#phone').val(),
+    //         flag: '2'
+    //     },
+    //     dataType: "json",
+    //     success: function(res) {
+    //         alert(res.msg);
+    //         if (!res.err) {
+    //             location.href = baseUrl + '/index.html';
+    //         }
+    //     }
+    // });
     $.ajax({
-        type: "post",
-        url: baseUrl + "/users/login",
-        data: {
-            phone: $('#phone').val(),
-            flag: '2'
-        },
+        type: "get",
+        url: baseUrl + "/users/checkcode",
+        data: { code: $('#yzm').val(), email: $('#phone').val() },
         dataType: "json",
         success: function(res) {
             alert(res.msg);
-            if (!res.err) {
+            if (!res.err) { //成功
                 location.href = baseUrl + '/index.html';
             }
         }
